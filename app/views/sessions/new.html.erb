@@ -1,0 +1,14 @@
+<%= form_tag sessions_path do %>
+  <%= render 'shared/flash_message' %>
+  <div>
+    <%= text_field_tag :login, nil, placeholder: t('user_or_email') %>
+  </div>
+  <div>
+    <%= password_field_tag :password, nil, placeholder: t('password') %>
+  </div>
+  <div>
+    <%= submit_tag t('login') %>
+  </div>
+<% end %>
+
+<%= link_to t('register'), signup_path %>

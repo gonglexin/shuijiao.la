@@ -1,0 +1,23 @@
+<%= form_for @user do |f| %>
+  <%= render 'shared/error_messages', target: @user %>
+  <div>
+    <%= f.text_field :name, placeholder: t('name') %>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: t('email') %>
+  </div>
+  <div>
+    <%= f.password_field :password, placeholder: t('password') %>
+  </div>
+  <div>
+    <%= f.text_field :bio, placeholder: t('bio') %>
+  </div>
+  <div>
+    <%= f.submit t('register') %>
+  </div>
+<% end %>
+
+<%= t('already_have_a_account') %>
+<%= link_to t('login'), login_path %>
+<%= link_to t('login_with_twitter'), '/auth/twitter' %>
+<%= link_to t('login_with_weibo'), '/auth/weibo' %>

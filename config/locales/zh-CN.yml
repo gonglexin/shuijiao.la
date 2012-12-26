@@ -1,0 +1,23 @@
+zh-CN:
+  login: 登录
+  logout: 注销
+  signup: 注册
+  name: 用户名
+  email: 邮件
+  bio: 签名
+  register: 注册
+  already_have_a_account: 已有帐号?
+  user_or_email: 用户名或邮箱
+  password: 密码
+  login_with_twitter: 推特登录
+  login_with_weibo: 微博登录
+  login_sucess: 登录成功
+  login_failed: 登录失败
+  logged out: 注销登录
+
+  mongoid:
+    attributes:
+      user:
+        name: 名字
+        email: 邮件
+        password: 密码
